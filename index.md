@@ -4,7 +4,7 @@ title: Cedar Privacy Policy
 
 # Privacy Policy for Cedar
 
-*Last updated: October 5, 2026*
+*Last updated: October 8, 2026*
 
 Cedar ("the App", Android package `com.simplejournal.app`) is a private journal. This policy explains exactly what
 happens to your information. The short version:
@@ -24,6 +24,10 @@ happens to your information. The short version:
 | Attached photos | Copies in the App's private folder | Same as above |
 | Custom moods, theme, font and other preferences | Private app settings | Same as above |
 | App Lock PIN or pattern | Stored only as a one-way hash, never in readable form | No |
+| Recently deleted entries | Private app database, for 30 days after you delete them | Not included in exports or backups |
+| Reminder settings (time, days) | Private app settings | Same as other preferences |
+
+Streaks, statistics, "On this day" memories and the "What's new" notes are all computed on your device from your own entries.
 
 The App uses the Android **system Photo Picker**. It cannot browse your gallery; it only receives the specific photos you choose,
 and it copies them into its private folder.
@@ -77,6 +81,12 @@ over. You can turn device backup off in your phone's system settings.
 If you buy Cedar Pro, the payment is processed entirely by Google Play. The developer receives confirmation that a purchase exists, never
 your payment details.
 
+### 3.7 Daily reminder (off unless you turn it on)
+If you turn on the daily reminder, the App asks Android for permission to show notifications and schedules the reminder with Android's
+alarm service on your device. The notification contains a writing prompt only, never anything from your journal, and is marked private so
+it is hidden on a locked screen when your phone is set to hide sensitive content. No server is involved. You can turn it off in Settings
+or in Android's notification settings at any time.
+
 ## 4. Permissions the App uses
 
 | Permission | Why |
@@ -84,7 +94,8 @@ your payment details.
 | Internet / network state | Added by Google's ML Kit library for its diagnostics (Section 3.1). Cedar's own code makes no network requests. |
 | Biometrics (`USE_BIOMETRIC`) | Fingerprint or face unlock for App Lock, if you enable it. |
 | Vibration (`VIBRATE`) | Subtle haptic feedback on taps and saves; can be turned off in Settings. |
-| Background work (`WAKE_LOCK`, `RECEIVE_BOOT_COMPLETED`) | Lets an automatic backup you turned on finish in the background, including after a restart. |
+| Notifications (`POST_NOTIFICATIONS`) | Shows the daily reminder, only if you turn it on; Android asks you first. |
+| Background work (`WAKE_LOCK`, `RECEIVE_BOOT_COMPLETED`) | Lets an automatic backup you turned on finish in the background, and re-schedules your reminder after a restart. |
 
 The App does **not** request access to your microphone, photo library, files, contacts, location, camera, or phone state.
 
@@ -95,7 +106,9 @@ other than the Google-library diagnostics described in Section 3.1.
 
 ## 6. Keeping and deleting your data
 
-- Delete any entry from the entry editor, or erase everything with **Settings → Delete All Journal Data**.
+- Delete any entry from the entry editor. It moves to **Settings → Recently deleted**, where you can restore it or delete it for
+  good; anything left there is permanently deleted after 30 days.
+- Erase everything immediately with **Settings → Delete All Journal Data**.
 - Uninstalling the App removes all of its data from your device. Copies you exported, shared, or that are in an Android device backup
   are not affected and must be removed separately.
 
