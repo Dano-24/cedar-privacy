@@ -4,7 +4,7 @@ title: Cedar Privacy Policy
 
 # Privacy Policy for Cedar
 
-*Last updated: October 8, 2026*
+*Last updated: October 9, 2026*
 
 Cedar ("the App", Android package `com.simplejournal.app`) is a private journal. This policy explains exactly what
 happens to your information. The short version:
@@ -27,7 +27,8 @@ happens to your information. The short version:
 | Recently deleted entries | Private app database, for 30 days after you delete them | Not included in exports or backups |
 | Reminder settings (time, days) | Private app settings | Same as other preferences |
 
-Streaks, statistics, "On this day" memories and the "What's new" notes are all computed on your device from your own entries.
+Streaks, statistics, "days this week", favorites, the daily prompt, "On this day" memories and the "What's new" notes are all
+computed and stored on your device from your own entries.
 
 The App uses the Android **system Photo Picker**. It cannot browse your gallery; it only receives the specific photos you choose,
 and it copies them into its private folder.
