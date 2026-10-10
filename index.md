@@ -24,6 +24,7 @@ happens to your information. The short version:
 | Attached photos | Copies in the App's private folder | Same as above |
 | Custom moods, theme, font and other preferences | Private app settings | Same as above |
 | App Lock PIN or pattern | Stored only as a one-way hash, never in readable form | No |
+| Backup password (if you set one) | Never stored. Only a key derived from it is kept, protected by the Android Keystore | No |
 | Recently deleted entries | Private app database, for 30 days after you delete them | Not included in exports or backups |
 | Reminder settings (time, days) | Private app settings | Same as other preferences |
 
@@ -70,7 +71,12 @@ Drive, Proton Drive or any other app the picker offers). After changes to your j
 behalf; the app that owns the location (for example Google Drive) stores and syncs it under its own privacy policy. The App itself
 never connects to those services or to any server. You can turn it off or change the location in Settings at any time.
 
-**Backup files are not encrypted.** Anyone who has a copy of your backup file can read its contents, so store and share it with care.
+**Backup protection.** By default a backup file is not encrypted: anyone with a copy can read it, so store and share it with care. In
+Settings you can choose a **backup password**. Every backup, manual and automatic, is then encrypted on your device (AES-256) and can be
+opened only with that password, which the developer cannot recover or reset. The key derived from your password stays on your device,
+protected by the Android Keystore, so automatic backups can run without asking for it.
+
+**Text exports.** Markdown and plain-text exports are ordinary, readable files that you save or share where you choose, like any other export.
 
 ### 3.5 Android device backup
 If Android's device backup is on, Android includes Cedar's journal, photos and settings in your Google account backup **only when
@@ -87,6 +93,11 @@ If you turn on the daily reminder, the App asks Android for permission to show n
 alarm service on your device. The notification contains a writing prompt only, never anything from your journal, and is marked private so
 it is hidden on a locked screen when your phone is set to hide sensitive content. No server is involved. You can turn it off in Settings
 or in Android's notification settings at any time.
+
+### 3.8 Importing from other journal apps
+"Import from another app" reads an export file that you pick (from Day One, Journey, Daylio, or Markdown and text files) and copies its
+entries and photos into your journal on your device. The file is read locally and nothing is sent anywhere. The temporary copy made while
+you preview an import is deleted when you finish or cancel.
 
 ## 4. Permissions the App uses
 
