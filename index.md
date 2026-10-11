@@ -99,6 +99,9 @@ or in Android's notification settings at any time.
 entries and photos into your journal on your device. The file is read locally and nothing is sent anywhere. The temporary copy made while
 you preview an import is deleted when you finish or cancel.
 
+### 3.9 Journals, widget, shortcuts and sharing into Cedar
+Journals are separate sections of your journal that are stored on your device with the rest of your entries; they are included in backups and exports like everything else. The home-screen widget, the app shortcuts and the Quick Settings tile only open the App. The widget shows a writing prompt and, if App Lock is off, how many days this week you wrote; with App Lock on it shows nothing from your journal. When you share text or photos to Cedar from another app, the App copies them into your journal on your device. Nothing is sent anywhere, and the App asks for no extra permissions for any of this.
+
 ## 4. Permissions the App uses
 
 | Permission | Why |
