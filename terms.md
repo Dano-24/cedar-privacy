@@ -5,10 +5,10 @@ permalink: /terms/
 
 # Terms of Use for Cedar
 
-*Last updated: October 29, 2026*
+*Last updated: October 31, 2026*
 
 These terms cover your use of Cedar ("the App", Android package `com.simplejournal.app`, and the Cedar web companion),
-made by **[DEVELOPER LEGAL NAME]** ("we", "us"). By installing or using the App you agree to them. If you don't agree,
+made by **Daniel Wilson** ("we", "us"). By installing or using the App you agree to them. If you don't agree,
 please don't use the App. How the App handles your information is described separately in the
 [Privacy Policy](https://dano-24.github.io/cedar-privacy/).
 
@@ -78,8 +78,8 @@ statutory rights as a consumer.
 
 ## 9. Governing law
 
-These terms are governed by the laws of **[COUNTRY / STATE]**, without affecting any mandatory consumer protections
-of the country where you live.
+These terms are governed by the laws of the **Province of Ontario** and the federal laws of **Canada** that apply there,
+without affecting any mandatory consumer protections of the country where you live.
 
 ## 10. Contact
 
